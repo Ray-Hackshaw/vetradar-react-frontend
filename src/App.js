@@ -1,32 +1,24 @@
 import React, {useState} from 'react';
+import Products from './Products';
 import './App.css';
+import Cart from './Cart';
+
+const PAGE_PRODUCTS = 'products';
+const PAGE_CART = 'cart';
 
 function App() {
-  const [products] = useState([
-    {
-    name: 'Sledgehammer',
-    price: 125.76
-    },
-    {
-    name: 'Axe',
-    price: 190.51
-    },
-    {
-    name: 'Bandsaw',
-    price: 562.14
-    },
-    {
-    name: 'Chisel',
-    price: 13.9
-    },
-    {
-    name: 'Hacksaw',
-    price: 19.45
-    }
-  ]);
+  const [cart, setCart] = useState([]);
+  const [page, setPage] = useState(PAGE_PRODUCTS);
+  const switchPage = (nextPage) => {
+    setPage(nextPage);
+  };
   return (
     <div className="App">
       <h1>Vet Radar Front End React Tests</h1>
+      <button onClick={() => switchPage(PAGE_PRODUCTS)}>Products</button>
+      <button onClick={() => switchPage(PAGE_CART)}>My Cart</button>
+      {page === PAGE_PRODUCTS && (<Products cart={cart} setCart={setCart}/>)}
+      {page === PAGE_CART && (<Cart cart={cart} setCart={setCart}/>)}
     </div>
     );
   }
