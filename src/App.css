@@ -1,5 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
 html {
   background: rgb(146, 186, 187);
+}
+
+body {
+  text-align: center;
+  background: whitesmoke;
+  font-family: 'Poppins', sans-serif;
+  margin: 2vw 2vw;
+  font-size: 2vw;
+  color: black;
 }
 
 .App {
@@ -39,9 +50,32 @@ html {
   padding: 0% 2vw;
   text-align: center;
   text-decoration: none;
+  float: right;
 }
 
 .headerbtn:hover {
   color: white;
   background-color: #666;
+}
+
+.products {
+  height: auto;
+  display: flex;
+  background: linear-gradient(rgba(55, 82, 75, 0.3), rgba(36, 51, 47, 0.9));
+  border: 2px solid white;
+  border-radius: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.product {
+  padding: 2vw;
+  margin: 1vw 1vw;
+  border-radius: 10px;
+  min-width: 20%;
+  background-color: white;
+  border: 2px solid black;
+  box-shadow: 2px 3px;
 }
