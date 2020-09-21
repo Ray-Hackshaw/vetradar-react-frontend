@@ -1,3 +1,10 @@
+html {
+  background: rgb(146, 186, 187);
+}
+
 .App {
   text-align: center;
+  background: white;
+  border: 2px solid black;
+  border-radius: 2px;
 }
