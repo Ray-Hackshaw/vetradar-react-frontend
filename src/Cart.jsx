@@ -1,7 +1,6 @@
 import React from 'react';
 
 export default function Cart({cart, setCart}) {
-
     const getTotalSum = () => {
         return cart.reduce(
           (sum, {price, quantity}) => sum + price * quantity,

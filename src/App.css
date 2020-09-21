@@ -92,6 +92,15 @@ button {
   border-radius: 10px;
 }
 
+button:hover {
+  background-color: rgb(139, 135, 135);
+}
+
+button:active {
+  box-shadow: 0 2px #666;
+  transform: translateY(4px);
+}
+
 .total {
   padding-top: 2vw;
   font-size: 4vw;
