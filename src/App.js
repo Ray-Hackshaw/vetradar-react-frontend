@@ -14,9 +14,13 @@ function App() {
   };
   return (
     <div className="App">
-      <h1>Vet Radar Front End React Tests</h1>
-      <button onClick={() => switchPage(PAGE_PRODUCTS)}>Products</button>
-      <button onClick={() => switchPage(PAGE_CART)}>My Cart</button>
+      <header className="heading">
+        <h1 className="title">
+          <span>Vet Radar Front End React Tests</span>
+          <button class="headerbtn border" onClick={() => switchPage(PAGE_PRODUCTS)}>Products</button>
+          <button class="headerbtn border" onClick={() => switchPage(PAGE_CART)}>My Cart</button>
+        </h1>
+      </header>
       {page === PAGE_PRODUCTS && (<Products cart={cart} setCart={setCart}/>)}
       {page === PAGE_CART && (<Cart cart={cart} setCart={setCart}/>)}
     </div>

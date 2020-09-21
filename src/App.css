@@ -8,3 +8,40 @@ html {
   border: 2px solid black;
   border-radius: 2px;
 }
+
+.App .heading {
+  background: black;
+  border: 3px solid white;
+  font-size: 5vmin;
+  text-align: left;
+  padding: 0% 1%;
+  height: 100%;
+  width: auto;
+  overflow: hidden;
+}
+
+.title {
+  color: white;
+  font-size: 5vmin;
+  padding-left: 2%;
+  text-align: left;
+  width: auto;
+}
+
+.border {
+  border: 2px solid white;
+}
+
+.headerbtn {
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  padding: 0% 2vw;
+  text-align: center;
+  text-decoration: none;
+}
+
+.headerbtn:hover {
+  color: white;
+  background-color: #666;
+}
