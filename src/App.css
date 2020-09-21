@@ -79,3 +79,21 @@ body {
   border: 2px solid black;
   box-shadow: 2px 3px;
 }
+
+.product:hover {
+  transform: translateY(-4px);
+  box-shadow: 5px 10px;
+}
+
+button {
+  font-size: 2vw;
+  font-family: 'Poppins', sans-serif;
+  padding: 1vw;
+  border-radius: 10px;
+}
+
+.total {
+  padding-top: 2vw;
+  font-size: 4vw;
+  color: black;
+}

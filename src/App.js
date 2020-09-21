@@ -17,8 +17,8 @@ function App() {
       <header className="heading">
         <h1 className="title">
           <span className="border">Vet Radar Front End React Tests</span>
+          <a href="#" class="headerbtn border" onClick={() => switchPage(PAGE_CART)}>Cart [{cart.reduce((sum, { quantity }) => sum + quantity, 0)}]</a>
           <a href="#" class="headerbtn border" onClick={() => switchPage(PAGE_PRODUCTS)}>Products</a>
-          <a href="#" class="headerbtn border" onClick={() => switchPage(PAGE_CART)}>My Cart</a>
         </h1>
       </header>
       {page === PAGE_PRODUCTS && (<Products cart={cart} setCart={setCart}/>)}
